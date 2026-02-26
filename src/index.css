@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .pokedex-screen {
+    @apply bg-gray-800 border-4 border-pokedex-dark-gray rounded-lg p-4 text-white font-gameboy;
+  }
+  
+  .pokedex-button {
+    @apply w-4 h-4 rounded-full bg-pokedex-blue border-2 border-blue-700 shadow-inner;
+  }
+  
+  .pokedex-red-button {
+    @apply w-8 h-8 rounded-full bg-pokedex-red border-2 border-pokedex-dark-red shadow-lg hover:bg-red-600 transition-colors;
+  }
+}
